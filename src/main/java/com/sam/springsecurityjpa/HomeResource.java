@@ -13,7 +13,7 @@ public class HomeResource {
 
 	@GetMapping("/user")
 	public String user() {
-		return "<h1>Welcome User</h1><br><a href='/logout'>logout</a><br><a href='http://localhost:8080/'>home</a>";
+		return "<h1>Welcome User</h1><br><a href='/logout'>logout</a><br><a href='../'>home</a>";
 	}
 
 	@GetMapping("/admin")
