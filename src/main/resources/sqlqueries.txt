@@ -1,0 +1,21 @@
+create database springsecurity;
+use springsecurity;
+
+create table user(
+id int not null,
+active boolean not null,
+password varchar(50) not null,
+roles varchar(50) not null,
+user_name varchar(50) not null primary key
+)
+
+
+
+
+insert into user(id,active,password,roles,user_name)
+values(1,true,'passs','ROLE_USER','user');
+
+insert into user(id,active,password,roles,user_name)
+values(2,true,'admin','ROLE_ADMIN','admin');
+
+SELECT * FROM springsecurity.user;
